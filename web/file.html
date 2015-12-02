@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>API Test</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="documentation.css">
+        <link rel="stylesheet" href="estil.css">
+        <link rel="stylesheet" href="pygments.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body>
+        <div class="container theme-showcase" role="main">
+            <div class="jumbotron">
+                <h1>API Test</h1>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel_title">File</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group input-group-sm"><span class="input-group-addon">Name: </span><input type="text" id="file_name" class="form-control"></div>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">Description:</span> <input type="text" id="descripcion" class="form-control"><br/></div>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">Date:</span> <input type="text" id="fecha" class="form-control"><br/></div>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">Size:</span> <input type="text" id="tamano" class="form-control"><br/></div>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">Tags:</span> <input type="text" id="tags" class="form-control"><br/></div>
+                    <div class="input-group input-group-sm"><span class="input-group-addon">URL:</span> <input type="text" id="url" class="form-control"><br/></div>
+
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger" id="button_list">List</button>
+            <button type="button" class="btn btn-danger" id="button_post">POST (Create)</button>
+            <button type="button" class="btn btn-danger" id="button_get">GET (Request)</button>
+            <button type="button" class="btn btn-danger" id="button_put">PUT (Update)</button>
+            <button type="button" class="btn btn-danger" id="button_delete">DELETE (Delete)</button>
+            <button type="button" class="btn btn-danger" id="button_pagination">Pagination</button>
+            <br><br>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">RESPOSTA</h1>
+                    </div>
+                    <div class="panel-body">
+                        <span id="result"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <!-- Event and AJAX functions -->
+        <script type="text/javascript" src="weblinking.js"></script>
+        <script type="text/javascript" src="file.js"></script>
+        <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
